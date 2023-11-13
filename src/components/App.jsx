@@ -15,7 +15,7 @@ export const App = props => {
     { label: 'Bad', value: bad, func: setBad },
   ];
 
-  let totalFeedback = good + neutral + bad;
+  const totalFeedback = good + neutral + bad;
 
   const goodFeedbackPercentage =
     good === 0 ? 0 : Math.round((good / totalFeedback) * 100);
